@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/home/ginrex/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/23.2.1/support-annotations-23.2.1.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="ccb693bc0774fcb637246f7360de25b4af7df318">
+        <dex dex="/home/ginrex/AndroidStudioProjects/TweetClient/app/build/intermediates/pre-dexed/debug/support-annotations-23.2.1-e7f67b30da697ec2bfe43b17967afe9bacebd01a.jar" />
+    </item>
+    <item
+        jar="/home/ginrex/AndroidStudioProjects/TweetClient/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.2.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="3be474b1b21b31cf2fa93fe6bd641ae108d96452">
+        <dex dex="/home/ginrex/AndroidStudioProjects/TweetClient/app/build/intermediates/pre-dexed/debug/classes-00f12c635154852d49fb8b6b0fffa176e8ad6f51.jar" />
+    </item>
+    <item
+        jar="/home/ginrex/AndroidStudioProjects/TweetClient/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.2.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="e3885783ff8926ed9e2fdcd16816c2e1e73e7aee">
+        <dex dex="/home/ginrex/AndroidStudioProjects/TweetClient/app/build/intermediates/pre-dexed/debug/classes-08af1c4de7a5bac84702aa3b9e9409c56d14b663.jar" />
+    </item>
+    <item
+        jar="/home/ginrex/AndroidStudioProjects/TweetClient/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.2.1/jars/libs/internal_impl-23.2.1.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="607a3d0b8013b4ccbfeb0b7cb293351994e021fb">
+        <dex dex="/home/ginrex/AndroidStudioProjects/TweetClient/app/build/intermediates/pre-dexed/debug/internal_impl-23.2.1-69d0959498504e19c634fef2f6a764c9f9e7133d.jar" />
+    </item>
+    <item
+        jar="/home/ginrex/.gradle/caches/modules-2/files-2.1/com.loopj.android/android-async-http/1.4.8/77bbfe240e437ecb396d982afa0d3bd4f9090ba7/android-async-http-1.4.8.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="77bbfe240e437ecb396d982afa0d3bd4f9090ba7">
+        <dex dex="/home/ginrex/AndroidStudioProjects/TweetClient/app/build/intermediates/pre-dexed/debug/android-async-http-1.4.8-f4876b870bffdc24f7bbca7d2225240632bf9eae.jar" />
+    </item>
+
+</items>
