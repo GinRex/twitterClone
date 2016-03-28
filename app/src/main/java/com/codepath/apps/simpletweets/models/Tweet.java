@@ -65,8 +65,9 @@ public class Tweet {
             tweet.createdAt =  jsonObject.getString("created_at");
             tweet.User = user.fromJSON(jsonObject.getJSONObject("user"));
 
-            //tweet.likeC = jsonObject.getInt("favorite_count");
-            //tweet.shareC = jsonObject.getInt("retweet_count");
+            tweet.likeC = jsonObject.getInt("favorite_count");
+            //Log.d("like", String.valueOf(tweet.likeC));
+            tweet.shareC = jsonObject.getInt("retweet_count");
             JSONArray media = jsonObject.getJSONObject("entities").getJSONArray("media");
             JSONObject mediap = media.getJSONObject(0);
             tweet.picURL = mediap.getString("media_url");

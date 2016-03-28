@@ -66,14 +66,14 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ViewHo
         ImageView userPPic = holder.userProfilePic;
         ImageView ePic = holder.epic;
         TextView tvTime = holder.tvDateago;
-        //TextView like = holder.tvLike;
-        //TextView share = holder.tvShare;
+        TextView like = holder.tvLike;
+        TextView share = holder.tvShare;
 
         tvTime.setText(tweet.getRelativeTimeAgo(tweet.getCreatedAt()));
         tvName.setText(tweet.getUser().getName());
         tvBody.setText(tweet.getBody());
-        //like.setText(tweet.getLikeC());
-        //share.setText(tweet.getShareC());
+        like.setText(String.valueOf(tweet.getLikeC()));
+        share.setText(String.valueOf(tweet.getShareC()));
 
         userPPic.setImageResource(0);
         ePic.setImageResource(0);

@@ -112,7 +112,7 @@ activity#com.codepath.apps.simpletweets.TimelineActivity
 ADDED from /home/ginrex/AndroidStudioProjects/TweetClient/app/src/main/AndroidManifest.xml:49:9-54
 	android:name
 		ADDED from /home/ginrex/AndroidStudioProjects/TweetClient/app/src/main/AndroidManifest.xml:49:19-51
-activity#com.codepath.apps.restclienttemplate.ComposeActivity
-ADDED from /home/ginrex/AndroidStudioProjects/TweetClient/app/src/main/AndroidManifest.xml:50:9-98
+activity#com.codepath.apps.simpletweets.ComposeActivity
+ADDED from /home/ginrex/AndroidStudioProjects/TweetClient/app/src/main/AndroidManifest.xml:50:9-62
 	android:name
-		ADDED from /home/ginrex/AndroidStudioProjects/TweetClient/app/src/main/AndroidManifest.xml:50:19-86
+		ADDED from /home/ginrex/AndroidStudioProjects/TweetClient/app/src/main/AndroidManifest.xml:50:19-50

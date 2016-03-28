@@ -47,7 +47,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".TimelineActivity" />
-        <activity android:name="com.codepath.apps.restclienttemplate.ComposeActivity"></activity>
+        <activity android:name=".ComposeActivity"></activity>
     </application>
 
 </manifest>
