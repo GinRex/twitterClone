@@ -1,7 +1,8 @@
 package com.codepath.apps.simpletweets;
 
-import android.content.Intent;
 import android.os.Bundle;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -19,7 +20,8 @@ import org.json.JSONObject;
 
 import java.util.ArrayList;
 
-public class TimelineActivity extends AppCompatActivity {
+public class TimelineActivity extends AppCompatActivity implements ComposeActivity.ComposeActivityListener{
+    private SwipeRefreshLayout swipeContainer;
 
     private TwitterClient client;
     private ArrayList<Tweet> tweets;
@@ -35,6 +37,24 @@ public class TimelineActivity extends AppCompatActivity {
         return true;
     }
 
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int id = item.getItemId();
+        if (id == R.id.itCompose) {
+            composeDialog();
+            return true;
+        }
+        return super.onOptionsItemSelected(item);
+    }
+
+
+    //do somthing after dismiss the dialog
+    @Override
+    public void onFinishEditDialog() {
+        //clear and reload data
+        tweets.clear();
+        populateTimeline(0);
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,6 +71,8 @@ public class TimelineActivity extends AppCompatActivity {
         //connect to the listview
         //lvTweets.setAdapter(aTweets);
         //get the client
+
+
 
         rvTweet = (RecyclerView) findViewById(R.id.rvTweets);
         rvAdapter = new RecyclerAdapter(getApplicationContext(), tweets);
@@ -70,8 +92,45 @@ public class TimelineActivity extends AppCompatActivity {
         });
 
         client = TwitterApplication.getRestClient();
-
         populateTimeline(0);
+
+
+
+        // Lookup the swipe container view
+
+        swipeContainer = (SwipeRefreshLayout) findViewById(R.id.swipeContainer);
+
+        // Setup refresh listener which triggers new data loading
+
+        swipeContainer.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
+
+            @Override
+
+            public void onRefresh() {
+
+                // Your code to refresh the list here.
+
+                // Make sure you call swipeContainer.setRefreshing(false)
+
+                // once the network request has completed successfully.
+                tweets.clear();
+
+                populateTimeline(0);
+
+            }
+
+        });
+
+        // Configure the refreshing colors
+
+        swipeContainer.setColorSchemeResources(android.R.color.holo_blue_bright,
+
+                android.R.color.holo_green_light,
+
+                android.R.color.holo_orange_light,
+
+                android.R.color.holo_red_light);
+
     }
 
 
@@ -94,6 +153,7 @@ public class TimelineActivity extends AppCompatActivity {
                  //if (Tweet.fromJSONArray(json) != null) {
                  tweets.addAll(Tweet.fromJSONArray(json));
                  rvAdapter.notifyDataSetChanged();
+                 swipeContainer.setRefreshing(false);
              }
              // on failure
 
@@ -108,11 +168,16 @@ public class TimelineActivity extends AppCompatActivity {
      }
 
 
-
-    //onClick compose
-    public void onComposeAction(MenuItem mi) {
-        Intent i = new Intent(this, ComposeActivity.class);
-        startActivity(i);
+    private void composeDialog () {
+        FragmentManager fm = getSupportFragmentManager();
+        ComposeActivity composeActivity = ComposeActivity.newInstance("Tweet ur status");
+        composeActivity.show(fm, "fragment_compose");
     }
+
+//    //onClick compose
+//    public void onComposeAction(MenuItem mi) {
+//        Intent i = new Intent(this, ComposeActivity.class);
+//        startActivity(i);
+//    }
 
 }

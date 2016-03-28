@@ -29,6 +29,7 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ViewHo
 
     public class ViewHolder extends RecyclerView.ViewHolder {
         ImageView userProfilePic;
+        ImageView epic;
         TextView tvName;
         TextView tvBody;
         TextView tvDateago;
@@ -40,6 +41,7 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ViewHo
             tvName = (TextView) itemView.findViewById(R.id.tvName);
             tvBody = (TextView) itemView.findViewById(R.id.tvBody);
             tvDateago = (TextView) itemView.findViewById(R.id.tvTime);
+            epic = (ImageView) itemView.findViewById(R.id.ivePic);
         }
     }
 
@@ -57,6 +59,7 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ViewHo
         TextView tvName = holder.tvName;
         TextView tvBody = holder.tvBody;
         ImageView userPPic = holder.userProfilePic;
+        ImageView ePic = holder.epic;
         TextView tvTime = holder.tvDateago;
 
         tvTime.setText(tweet.getRelativeTimeAgo(tweet.getCreatedAt()));
@@ -64,14 +67,30 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ViewHo
         tvBody.setText(tweet.getBody());
 
         userPPic.setImageResource(0);
+        ePic.setImageResource(0);
 
 
         Picasso.with(context).load(tweet.getUser().getProfileImageURL()).into(userPPic);
+        Picasso.with(context).load(tweet.getPicURL()).into(ePic);
     }
 
 
     @Override
     public int getItemCount() {
         return tweets.size();
+    }
+
+    /* Within the RecyclerView.Adapter class */
+
+
+
+// Clean all elements of the recycler
+
+    public void clear() {
+
+        tweets.clear();
+
+        notifyDataSetChanged();
+
     }
 }

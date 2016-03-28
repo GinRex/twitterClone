@@ -1,7 +1,6 @@
 package com.codepath.apps.simpletweets.models;
 
 import android.text.format.DateUtils;
-import android.util.Log;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -21,6 +20,7 @@ public class Tweet {
     private long uid;
     private user User;
     private String createdAt;
+    private String picURL;
 
     //acess the attributes
 
@@ -41,6 +41,10 @@ public class Tweet {
         return User;
     }
 
+    public String getPicURL() {
+        return picURL;
+    }
+
     //from JSOn -> tweet obj
     public static Tweet fromJSON(JSONObject jsonObject) {
         Tweet tweet = new Tweet();
@@ -49,8 +53,10 @@ public class Tweet {
             tweet.body = jsonObject.getString("text");
             tweet.uid = jsonObject.getLong("id");
             tweet.createdAt =  jsonObject.getString("created_at");
-            Log.d("date", tweet.createdAt);
             tweet.User = user.fromJSON(jsonObject.getJSONObject("user"));
+            JSONArray media = jsonObject.getJSONObject("entities").getJSONArray("media");
+            JSONObject mediap = media.getJSONObject(0);
+            tweet.picURL = mediap.getString("media_url");
         }catch (JSONException e) {
             e.printStackTrace();
         }
