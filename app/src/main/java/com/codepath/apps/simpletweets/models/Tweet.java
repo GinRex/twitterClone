@@ -21,6 +21,8 @@ public class Tweet {
     private user User;
     private String createdAt;
     private String picURL;
+    private int likeC;
+    private int shareC;
 
     //acess the attributes
 
@@ -45,6 +47,14 @@ public class Tweet {
         return picURL;
     }
 
+    public int getShareC() {
+        return shareC;
+    }
+
+    public int getLikeC() {
+        return likeC;
+    }
+
     //from JSOn -> tweet obj
     public static Tweet fromJSON(JSONObject jsonObject) {
         Tweet tweet = new Tweet();
@@ -54,6 +64,9 @@ public class Tweet {
             tweet.uid = jsonObject.getLong("id");
             tweet.createdAt =  jsonObject.getString("created_at");
             tweet.User = user.fromJSON(jsonObject.getJSONObject("user"));
+
+            //tweet.likeC = jsonObject.getInt("favorite_count");
+            //tweet.shareC = jsonObject.getInt("retweet_count");
             JSONArray media = jsonObject.getJSONObject("entities").getJSONArray("media");
             JSONObject mediap = media.getJSONObject(0);
             tweet.picURL = mediap.getString("media_url");

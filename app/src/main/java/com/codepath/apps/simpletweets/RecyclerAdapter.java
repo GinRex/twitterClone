@@ -33,6 +33,8 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ViewHo
         TextView tvName;
         TextView tvBody;
         TextView tvDateago;
+        TextView tvLike;
+        TextView tvShare;
 
         public ViewHolder(View itemView) {
             super(itemView);
@@ -42,6 +44,9 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ViewHo
             tvBody = (TextView) itemView.findViewById(R.id.tvBody);
             tvDateago = (TextView) itemView.findViewById(R.id.tvTime);
             epic = (ImageView) itemView.findViewById(R.id.ivePic);
+            tvShare = (TextView) itemView.findViewById(R.id.tvShare);
+            tvLike = (TextView) itemView.findViewById(R.id.tvLike);
+
         }
     }
 
@@ -61,10 +66,14 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ViewHo
         ImageView userPPic = holder.userProfilePic;
         ImageView ePic = holder.epic;
         TextView tvTime = holder.tvDateago;
+        //TextView like = holder.tvLike;
+        //TextView share = holder.tvShare;
 
         tvTime.setText(tweet.getRelativeTimeAgo(tweet.getCreatedAt()));
         tvName.setText(tweet.getUser().getName());
         tvBody.setText(tweet.getBody());
+        //like.setText(tweet.getLikeC());
+        //share.setText(tweet.getShareC());
 
         userPPic.setImageResource(0);
         ePic.setImageResource(0);

@@ -25,9 +25,7 @@ public class TimelineActivity extends AppCompatActivity implements ComposeActivi
 
     private TwitterClient client;
     private ArrayList<Tweet> tweets;
-    private TweetArrayAdapter aTweets;
     private RecyclerAdapter rvAdapter;
-    //private ListView lvTweets;
     private RecyclerView rvTweet;
 
     // Inflate the menu; this adds items to the action bar if it is present.
@@ -66,8 +64,7 @@ public class TimelineActivity extends AppCompatActivity implements ComposeActivi
         //lvTweets = (ListView) findViewById(R.id.lvTweets);
         //create the arrayList
         tweets = new ArrayList<>();
-        //construct the adapter from data source
-        //aTweets = new TweetArrayAdapter(this, tweets);
+        //construct the adapter from data source;
         //connect to the listview
         //lvTweets.setAdapter(aTweets);
         //get the client
