@@ -19,15 +19,28 @@ The following **required** functionality is completed:
       - User can click a “Compose” icon in the Action Bar on the top right
       - User can then enter a new tweet and post this to twitter
       - User is taken back to home timeline with new tweet visible in timeline
+* [x] User can switch between Timeline and Mention views using tabs. 
+      - User can view their home timeline tweets.
+      - User can view the recent mentions of their username.
+* [x] User can navigate to view their own profile
+      - User can see picture, tagline, # of followers, # of following, and tweets on their profile.
+* [x] User can click on the profile image in any tweet to see another user's profile
+      - User can see picture, tagline, # of followers, # of following, and tweets of clicked user.
+      - Profile view should include that user's timeline
+* [ ] User can infinitely paginate any of these timelines (home, mentions, user) by scrolling to the bottom
+
 
 The following **optional** features are implemented:
-
-* [x] Add pull-to-refresh for popular stream with SwipeRefreshLayout
+* [x] Advanced: User can click on a tweet to be taken to a "detail view" of that tweet
+* [ ] Add pull-to-refresh for popular stream with SwipeRefreshLayout (some errors occur)
 * [x] Links in tweets are clickable and will launch the web browser (see autolink)
 * [x] Improve the user interface and theme the app to feel "twitter branded"
 * [x] User can see embedded image media within the tweet detail view
 * [x] Compose activity is replaced with a modal overlay
-* [x]  Leverage RecyclerView as a replacement for the ListView and ArrayAdapter for all lists of tweets.
+* [x] Leverage RecyclerView as a replacement for the ListView and ArrayAdapter for all lists of tweets.
+
+* [x] Bonus: Use Parcelable instead of Serializable using the popular Parceler library.
+* [x] Bonus: Apply the popular Butterknife annotation library to reduce view boilerplate.
 
 ## Video Walkthrough 
 
