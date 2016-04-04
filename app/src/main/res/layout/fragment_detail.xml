@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@android:color/holo_green_dark"
+        android:id="@+id/ivProfilePic"
+        android:layout_margin="5dp" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_toRightOf="@+id/ivProfilePic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_weight="5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="sdqwd"
+                android:id="@+id/tvName" />
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Text"
+                android:id="@+id/tvTime" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="qdwd"
+            android:id="@+id/tvBody"
+            android:autoLink="all"
+            android:linksClickable="true"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ivePic" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="2dp">
+
+            <ImageButton
+                android:layout_width="25dp"
+                android:layout_height="20dp"
+                android:id="@+id/ibRep"
+                android:background="@drawable/retweet"
+                android:layout_gravity="top" />
+            <TextView
+                android:layout_weight="10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:id="@+id/tvRep" />
+
+            <ImageButton
+                android:layout_width="25dp"
+                android:layout_height="20dp"
+                android:id="@+id/ibShare"
+                android:background="@drawable/share" />
+            <TextView
+                android:layout_weight="10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:id="@+id/tvShare" />
+
+            <ImageButton
+                android:layout_width="22dp"
+                android:layout_height="20dp"
+                android:id="@+id/ibLike"
+                android:background="@drawable/love" />
+            <TextView
+                android:layout_weight="75"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:id="@+id/tvLike" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

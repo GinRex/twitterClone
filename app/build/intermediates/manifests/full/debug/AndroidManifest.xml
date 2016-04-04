@@ -27,7 +27,7 @@
             android:value="1" />
 
         <activity
-            android:name="com.codepath.apps.simpletweets.LoginActivity"
+            android:name="com.codepath.apps.simpletweets.activity.LoginActivity"
             android:label="@string/app_name"
             android:theme="@style/AppTheme" >
             <intent-filter>
@@ -46,8 +46,9 @@
                     android:scheme="oauth" />
             </intent-filter>
         </activity>
-        <activity android:name="com.codepath.apps.simpletweets.TimelineActivity" />
-        <activity android:name="com.codepath.apps.simpletweets.ComposeActivity" />
+        <activity android:name="com.codepath.apps.simpletweets.activity.TimelineActivity" />
+        <!-- <activity android:name=".fragments.ComposeDialogFragment" /> -->
+        <activity android:name="com.codepath.apps.simpletweets.activity.ProfileActivity" />
     </application>
 
 </manifest>

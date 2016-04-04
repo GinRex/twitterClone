@@ -8,13 +8,32 @@ import org.json.JSONObject;
  */
 public class user {
     //attributes
-    private String name;
-    private Long uid;
-    private String screenName;
-    private String profileImageURL;
+    public String name;
+    public Long uid;
+    public String screenName;
+    public String profileImageURL;
+    public String tagLine;
+    public int followerCount;
+    public int followingCount;
+
+    public user() {
+
+    }
 
     // get the attributes
 
+
+    public String getTagLine() {
+        return tagLine;
+    }
+
+    public int getFollowerCount() {
+        return followerCount;
+    }
+
+    public int getFollowingCount() {
+        return followingCount;
+    }
 
     public String getName() {
         return name;
@@ -42,6 +61,9 @@ public class user {
             u.uid = jsonObject.getLong("id");
             u.profileImageURL = jsonObject.getString("profile_image_url");
             u.screenName = jsonObject.getString("screen_name");
+            u.tagLine = jsonObject.getString("description");
+            u.followerCount = jsonObject.getInt("followers_count");
+            u.followingCount = jsonObject.getInt("friends_count");
         } catch (JSONException e) {
             e.printStackTrace();
         }

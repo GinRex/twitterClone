@@ -2,88 +2,109 @@
 <items version="2" >
 
     <item
+        jar="/home/ginrex/twitterClone/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="4fcf0b1879f8caf497c073e1432d398e9e2988c1">
+        <dex dex="/home/ginrex/twitterClone/app/build/intermediates/pre-dexed/debug/classes-808f281b2070299b771e79d663d96851700a48df.jar" />
+    </item>
+    <item
         jar="/home/ginrex/.gradle/caches/modules-2/files-2.1/com.michaelpardo/activeandroid/3.1.0-SNAPSHOT/4ab7b0182975bc57c49efc5e0b3baa4a10e4ec08/activeandroid-3.1.0-SNAPSHOT.jar"
         jumboMode="false"
         revision="23.0.0"
         sha1="4ab7b0182975bc57c49efc5e0b3baa4a10e4ec08">
-        <dex dex="/home/ginrex/AndroidStudioProjects/TweetClient/app/build/intermediates/pre-dexed/debug/activeandroid-3.1.0-SNAPSHOT-071e3e9667f09ab1b7e524a9bfa7fa00080709e5.jar" />
+        <dex dex="/home/ginrex/twitterClone/app/build/intermediates/pre-dexed/debug/activeandroid-3.1.0-SNAPSHOT-071e3e9667f09ab1b7e524a9bfa7fa00080709e5.jar" />
+    </item>
+    <item
+        jar="/home/ginrex/twitterClone/app/build/intermediates/exploded-aar/com.astuetz/pagerslidingtabstrip/1.0.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="7912610ed96381c25c36d986eba422731b9641b6">
+        <dex dex="/home/ginrex/twitterClone/app/build/intermediates/pre-dexed/debug/classes-b3f4095f62590c5334ddb8f2c193e392d56c3bd7.jar" />
+    </item>
+    <item
+        jar="/home/ginrex/twitterClone/app/libs/scribe-codepath-0.0.3.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="a580d06de954001f787e8d024bfcf931fe30bdda">
+        <dex dex="/home/ginrex/twitterClone/app/build/intermediates/pre-dexed/debug/scribe-codepath-0.0.3-0588fd873489b8a91d50cba8c6715d74702f73c7.jar" />
+    </item>
+    <item
+        jar="/home/ginrex/twitterClone/app/libs/org.apache.http.legacy.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="fa331331b626ee78c52bea16ce1e34b39e666ce5">
+        <dex dex="/home/ginrex/twitterClone/app/build/intermediates/pre-dexed/debug/org.apache.http.legacy-3c54e10eb48139227a551366ed26bc6c76f3b929.jar" />
+    </item>
+    <item
+        jar="/home/ginrex/twitterClone/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.2.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="3be474b1b21b31cf2fa93fe6bd641ae108d96452">
+        <dex dex="/home/ginrex/twitterClone/app/build/intermediates/pre-dexed/debug/classes-df4bd7ce64154220ebc2f96ef3b64740925c9867.jar" />
     </item>
     <item
         jar="/home/ginrex/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/23.2.1/support-annotations-23.2.1.jar"
         jumboMode="false"
         revision="23.0.0"
         sha1="ccb693bc0774fcb637246f7360de25b4af7df318">
-        <dex dex="/home/ginrex/AndroidStudioProjects/TweetClient/app/build/intermediates/pre-dexed/debug/support-annotations-23.2.1-e7f67b30da697ec2bfe43b17967afe9bacebd01a.jar" />
+        <dex dex="/home/ginrex/twitterClone/app/build/intermediates/pre-dexed/debug/support-annotations-23.2.1-e7f67b30da697ec2bfe43b17967afe9bacebd01a.jar" />
     </item>
     <item
-        jar="/home/ginrex/AndroidStudioProjects/TweetClient/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.2.1/jars/libs/internal_impl-23.2.1.jar"
+        jar="/home/ginrex/twitterClone/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.2.1/jars/libs/internal_impl-23.2.1.jar"
         jumboMode="false"
         revision="23.0.0"
         sha1="607a3d0b8013b4ccbfeb0b7cb293351994e021fb">
-        <dex dex="/home/ginrex/AndroidStudioProjects/TweetClient/app/build/intermediates/pre-dexed/debug/internal_impl-23.2.1-69d0959498504e19c634fef2f6a764c9f9e7133d.jar" />
+        <dex dex="/home/ginrex/twitterClone/app/build/intermediates/pre-dexed/debug/internal_impl-23.2.1-5dc59cf585995b809d3e350230b1c50a0cb600e4.jar" />
     </item>
     <item
-        jar="/home/ginrex/AndroidStudioProjects/TweetClient/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.2.1/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.0"
-        sha1="3be474b1b21b31cf2fa93fe6bd641ae108d96452">
-        <dex dex="/home/ginrex/AndroidStudioProjects/TweetClient/app/build/intermediates/pre-dexed/debug/classes-00f12c635154852d49fb8b6b0fffa176e8ad6f51.jar" />
-    </item>
-    <item
-        jar="/home/ginrex/AndroidStudioProjects/TweetClient/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.0/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.0"
-        sha1="4fcf0b1879f8caf497c073e1432d398e9e2988c1">
-        <dex dex="/home/ginrex/AndroidStudioProjects/TweetClient/app/build/intermediates/pre-dexed/debug/classes-dbd0e204212aa2cb614d94b2b71dfde002cc2d82.jar" />
-    </item>
-    <item
-        jar="/home/ginrex/AndroidStudioProjects/TweetClient/app/libs/org.apache.http.legacy.jar"
-        jumboMode="false"
-        revision="23.0.0"
-        sha1="fa331331b626ee78c52bea16ce1e34b39e666ce5">
-        <dex dex="/home/ginrex/AndroidStudioProjects/TweetClient/app/build/intermediates/pre-dexed/debug/org.apache.http.legacy-ecacf9bf3354b9c68fab068a1989a3f0d27647e6.jar" />
-    </item>
-    <item
-        jar="/home/ginrex/AndroidStudioProjects/TweetClient/app/libs/codepath-oauth-0.4.1.jar"
+        jar="/home/ginrex/twitterClone/app/libs/codepath-oauth-0.4.1.jar"
         jumboMode="false"
         revision="23.0.0"
         sha1="e2bf2d92cfe90d44287c510d955d0c979631e99e">
-        <dex dex="/home/ginrex/AndroidStudioProjects/TweetClient/app/build/intermediates/pre-dexed/debug/codepath-oauth-0.4.1-9fe706acfc9716f5ae248da53d8f7abcc131501c.jar" />
+        <dex dex="/home/ginrex/twitterClone/app/build/intermediates/pre-dexed/debug/codepath-oauth-0.4.1-b486b48db632e62a5ac33889c1976033775c849e.jar" />
     </item>
     <item
-        jar="/home/ginrex/AndroidStudioProjects/TweetClient/app/libs/codepath-utils.jar"
+        jar="/home/ginrex/twitterClone/app/libs/codepath-utils.jar"
         jumboMode="false"
         revision="23.0.0"
         sha1="10901a5ef726eacf1b2443b7f38dc4cc9cd3f7d4">
-        <dex dex="/home/ginrex/AndroidStudioProjects/TweetClient/app/build/intermediates/pre-dexed/debug/codepath-utils-d78cbd9d91d8d2c35e099e128581f5f8301e0208.jar" />
+        <dex dex="/home/ginrex/twitterClone/app/build/intermediates/pre-dexed/debug/codepath-utils-3f76a1197449142cb334bb976d7ae81edf8b5317.jar" />
     </item>
     <item
-        jar="/home/ginrex/AndroidStudioProjects/TweetClient/app/libs/scribe-codepath-0.0.3.jar"
+        jar="/home/ginrex/.gradle/caches/modules-2/files-2.1/com.jakewharton/butterknife/7.0.1/d5d13ea991eab0252e3710e5df3d6a9d4b21d461/butterknife-7.0.1.jar"
         jumboMode="false"
         revision="23.0.0"
-        sha1="a580d06de954001f787e8d024bfcf931fe30bdda">
-        <dex dex="/home/ginrex/AndroidStudioProjects/TweetClient/app/build/intermediates/pre-dexed/debug/scribe-codepath-0.0.3-4e0d043cef0fa8e718bae0c8101bb0f327382649.jar" />
+        sha1="d5d13ea991eab0252e3710e5df3d6a9d4b21d461">
+        <dex dex="/home/ginrex/twitterClone/app/build/intermediates/pre-dexed/debug/butterknife-7.0.1-075f8c66c86d6ec0bfcbf10a7b76b3be361f7e9b.jar" />
     </item>
     <item
-        jar="/home/ginrex/AndroidStudioProjects/TweetClient/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.2.1/jars/classes.jar"
+        jar="/home/ginrex/twitterClone/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.2.1/jars/classes.jar"
         jumboMode="false"
         revision="23.0.0"
         sha1="e3885783ff8926ed9e2fdcd16816c2e1e73e7aee">
-        <dex dex="/home/ginrex/AndroidStudioProjects/TweetClient/app/build/intermediates/pre-dexed/debug/classes-08af1c4de7a5bac84702aa3b9e9409c56d14b663.jar" />
-    </item>
-    <item
-        jar="/home/ginrex/.gradle/caches/modules-2/files-2.1/com.squareup.picasso/picasso/2.5.2/7446d06ec8d4f7ffcc53f1da37c95f200dcb9387/picasso-2.5.2.jar"
-        jumboMode="false"
-        revision="23.0.0"
-        sha1="7446d06ec8d4f7ffcc53f1da37c95f200dcb9387">
-        <dex dex="/home/ginrex/AndroidStudioProjects/TweetClient/app/build/intermediates/pre-dexed/debug/picasso-2.5.2-334d2d737a337ba65a3be722306b1427ed064027.jar" />
+        <dex dex="/home/ginrex/twitterClone/app/build/intermediates/pre-dexed/debug/classes-ecd56506ff274b81958a9ec5d2bacfc5efe0f3a9.jar" />
     </item>
     <item
         jar="/home/ginrex/.gradle/caches/modules-2/files-2.1/com.loopj.android/android-async-http/1.4.8/77bbfe240e437ecb396d982afa0d3bd4f9090ba7/android-async-http-1.4.8.jar"
         jumboMode="false"
         revision="23.0.0"
         sha1="77bbfe240e437ecb396d982afa0d3bd4f9090ba7">
-        <dex dex="/home/ginrex/AndroidStudioProjects/TweetClient/app/build/intermediates/pre-dexed/debug/android-async-http-1.4.8-f4876b870bffdc24f7bbca7d2225240632bf9eae.jar" />
+        <dex dex="/home/ginrex/twitterClone/app/build/intermediates/pre-dexed/debug/android-async-http-1.4.8-f4876b870bffdc24f7bbca7d2225240632bf9eae.jar" />
+    </item>
+    <item
+        jar="/home/ginrex/.gradle/caches/modules-2/files-2.1/org.parceler/parceler-api/1.0.4/4f7392b86e064f3f6da06977f54c21a48e6b6871/parceler-api-1.0.4.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="4f7392b86e064f3f6da06977f54c21a48e6b6871">
+        <dex dex="/home/ginrex/twitterClone/app/build/intermediates/pre-dexed/debug/parceler-api-1.0.4-fdb31cd0ccf2fc635dfbb1886ac04531e0fbd9af.jar" />
+    </item>
+    <item
+        jar="/home/ginrex/.gradle/caches/modules-2/files-2.1/com.squareup.picasso/picasso/2.5.2/7446d06ec8d4f7ffcc53f1da37c95f200dcb9387/picasso-2.5.2.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="7446d06ec8d4f7ffcc53f1da37c95f200dcb9387">
+        <dex dex="/home/ginrex/twitterClone/app/build/intermediates/pre-dexed/debug/picasso-2.5.2-334d2d737a337ba65a3be722306b1427ed064027.jar" />
     </item>
 
 </items>

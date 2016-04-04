@@ -6,7 +6,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context=".LoginActivity" >
+    tools:context=".activity.LoginActivity" >
 
     <Button
         android:layout_width="match_parent"
@@ -16,4 +16,4 @@
         android:onClick="loginToRest"
         android:text="@string/login_label" />
 
-</RelativeLayout><!-- From: file:/home/ginrex/AndroidStudioProjects/TweetClient/app/src/main/res/layout/activity_login.xml -->
+</RelativeLayout><!-- From: file:/home/ginrex/twitterClone/app/src/main/res/layout/activity_login.xml -->

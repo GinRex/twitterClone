@@ -13,4 +13,13 @@
         <!-- All customizations that are NOT specific to a particular API-level can go here. -->
     </style>
 
+
+    if you set this theme to your dialog it will always be fullscreen
+
+    <!-- DIALOG STYLE -->
+    <style name="You.Dialog" parent="android:Theme.Holo.Dialog" >
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowIsFloating">false</item>
+    </style>
 </resources>

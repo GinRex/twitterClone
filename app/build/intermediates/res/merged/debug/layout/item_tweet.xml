@@ -6,6 +6,7 @@
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:id="@+id/ivProfilePic"
+        android:clickable="true"
         android:layout_margin="5dp" />
 
     <LinearLayout
@@ -37,6 +38,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="qdwd"
+            android:clickable="true"
             android:id="@+id/tvBody"
             android:autoLink="all"
             android:linksClickable="true"/>
@@ -93,4 +95,4 @@
 
     </LinearLayout>
 
-</LinearLayout><!-- From: file:/home/ginrex/AndroidStudioProjects/TweetClient/app/src/main/res/layout/item_tweet.xml -->
+</LinearLayout><!-- From: file:/home/ginrex/twitterClone/app/src/main/res/layout/item_tweet.xml -->
