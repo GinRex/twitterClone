@@ -4,7 +4,6 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.widget.LinearLayoutManager;
-import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
 
@@ -24,7 +23,6 @@ import org.json.JSONObject;
 public class HomeTimelineFragment extends TweetsListFragment {
 
     private TwitterClient client;
-    private TweetsListFragment fragmentTweetsList;
     private SwipeRefreshLayout swipeContainer;
 
 
@@ -37,28 +35,27 @@ public class HomeTimelineFragment extends TweetsListFragment {
         super.onCreate(savedInstanceState);
         client = TwitterApplication.getRestClient();
         populateTimeline(0);
+
     }
 
-
-    public void refresh() {
-        tweets.clear();
-        populateTimeline(0);
-    }
 
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        rvTweet.setLayoutManager(new LinearLayoutManager(getActivity()));
-        rvTweet.addOnScrollListener(new EndlessRecyclerViewScrollListener(new LinearLayoutManager(getActivity())) {
+        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getActivity());
+        rvTweet.setLayoutManager(linearLayoutManager);
+
+        rvTweet.addOnScrollListener(new EndlessRecyclerViewScrollListener(linearLayoutManager) {
             @Override
             public void onLoadMore(int page, int totalItemsCount) {
-                Log.d("loadm", "ok");
+                //Log.d("loadm", "ok");
                 populateTimeline(page + 1);
+                customLoadMoreDataFromApi(page);
             }
         });
-
-
     }
+
+
 
     //send api requet
     //fill the view

@@ -34,6 +34,16 @@ public class TweetsListFragment extends Fragment {
         return v;
     }
 
+    public void customLoadMoreDataFromApi(int offset) {
+        // Send an API request to retrieve appropriate data using the offset value as a parameter.
+        // Deserialize API response and then construct new objects to append to the adapter
+        // Add the new objects to the data source for the adapter
+        // For efficiency purposes, notify the adapter of only the elements that got changed
+        // curSize will equal to the index of the first element inserted because the list is 0-indexed
+        int curSize = rvAdapter.getItemCount();
+        rvAdapter.notifyItemRangeInserted(curSize, tweets.size() - 1);
+    }
+
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

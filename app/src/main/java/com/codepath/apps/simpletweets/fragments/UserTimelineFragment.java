@@ -8,6 +8,7 @@ import android.widget.Toast;
 
 import com.codepath.apps.simpletweets.TwitterApplication;
 import com.codepath.apps.simpletweets.client.TwitterClient;
+import com.codepath.apps.simpletweets.interfaces.EndlessRecyclerViewScrollListener;
 import com.codepath.apps.simpletweets.models.Tweet;
 import com.loopj.android.http.JsonHttpResponseHandler;
 
@@ -32,7 +33,16 @@ public class UserTimelineFragment extends TweetsListFragment {
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        rvTweet.setLayoutManager(new LinearLayoutManager(getActivity()));
+        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getActivity());
+        rvTweet.setLayoutManager(linearLayoutManager);
+        rvTweet.addOnScrollListener(new EndlessRecyclerViewScrollListener(linearLayoutManager) {
+            @Override
+            public void onLoadMore(int page, int totalItemsCount) {
+                //Log.d("loadm", "ok");
+                populateTimeline(page + 1);
+                customLoadMoreDataFromApi(page);
+            }
+        });
     }
 
     // Creates a new fragment given an int and title
