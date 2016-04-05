@@ -27,7 +27,7 @@ The following **required** functionality is completed:
 * [x] User can click on the profile image in any tweet to see another user's profile
       - User can see picture, tagline, # of followers, # of following, and tweets of clicked user.
       - Profile view should include that user's timeline
-* [ ] User can infinitely paginate any of these timelines (home, mentions, user) by scrolling to the bottom
+* [x] User can infinitely paginate any of these timelines (home, mentions, user) by scrolling to the bottom
 
 
 The following **optional** features are implemented:
