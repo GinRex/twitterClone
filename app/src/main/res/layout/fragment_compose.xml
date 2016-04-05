@@ -7,7 +7,7 @@
     android:layout_centerVertical="true"
     android:layout_width="300dp"
     android:layout_height="400dp"
-    tools:context=".ComposeActivity">
+    tools:context=".fragments.ComposeDialogFragment">
 
     <EditText
         android:layout_width="300dp"
